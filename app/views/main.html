@@ -293,7 +293,7 @@
 											</label>
 											<span class="paddingL3">(L&iacute;nea Banamex)</span>
 											<br>
-											<label class="paddingL10"><input type="checkbox" ng-model="payingAccount.references"/> Referencias</label>
+											<label class="paddingL10"><input type="checkbox" ng-model="payingAccount.references" ng-checked="payingAccount.references"/> Referencias</label>
 											<form class="form-inline paddingL3">
 												<label class="paddingL10">
 													<span>Referencia num&eacute;rica</span><br>
@@ -416,8 +416,11 @@
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td colspan="3">
 										<div class="content pull-left paddingL10">
-											<div class="span175"><input ng-change="fiscalVerify(payingAccount)" type="checkbox"  ng-model="payingAccount.fiscal">
+											<div class="span175">
+												<form action="">
+												<input ng-change="fiscalVerify(payingAccount)" type="checkbox"  ng-model="payingAccount.fiscal">
 												Comprobante Fiscal<br>
+												</form>
 												<form class="form-inline paddingL3">
 													<strong class="inline width30">RFC</strong> <input ng-class="{'gray-input' : !payingAccount.editRfc}" class="form-control width100" type="text" value="" ng-model="payingAccount.rfc" maxlength="13" ng-change="payingAccount.fiscal = true; payingAccount.editRfc = true;this.focus()" ng-click="payingAccount.editRfc = true;this.focus()">
 												</form>
@@ -428,7 +431,7 @@
 
 										</div>
 										<div class="content pull-left textL paddingL143">
-											<label class="paddingL10"><input type="checkbox" ng-model="payingAccount.references"/> Referencias</label>
+											<label class="paddingL10"><input type="checkbox" ng-model="payingAccount.references" ng-checked="payingAccount.references"/> Referencias</label>
 											<form class="form-inline paddingL3">
 												<label class="paddingL10">
 													<span>N&uacute;mero de referencia</span><br>
