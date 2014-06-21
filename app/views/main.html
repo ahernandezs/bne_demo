@@ -418,11 +418,11 @@
 										<div class="content pull-left paddingL10">
 											<div class="span175">
 												<form action="">
-												<input ng-change="fiscalVerify(payingAccount)" type="checkbox"  ng-model="payingAccount.fiscal">
+												<input ng-change="fiscalVerify(payingAccount)" type="checkbox"  ng-model="payingAccount.editRfc">
 												Comprobante Fiscal<br>
 												</form>
 												<form class="form-inline paddingL3">
-													<strong class="inline width30">RFC</strong> <input ng-class="{'gray-input' : !payingAccount.editRfc}" class="form-control width100" type="text" value="" ng-model="payingAccount.rfc" maxlength="13" ng-change="payingAccount.fiscal = true; payingAccount.editRfc = true;this.focus()" ng-click="payingAccount.editRfc = true;this.focus()">
+													<strong class="inline width30">RFC</strong> <input ng-class="{'gray-input' : !payingAccount.editRfc}" class="form-control width100" type="text" value="" ng-model="payingAccount.rfc" maxlength="13" ng-change="payingAccount.fiscal = true; payingAccount.editRfc = true;" ng-click="payingAccount.editRfc = true;">
 												</form>
 												<form class="form-inline paddingL3">
 													<strong class="inline width30">IVA&nbsp;&nbsp;</strong> <input ng-class="{'gray-input' : !payingAccount.editIva}" class="form-control width80" maxlength="10" type="text" value="" ng-model="payingAccount.iva" ng-change="payingAccount.fiscal = true; payingAccount.editIva = true" numbers-only="numbers-only" ng-click="payingAccount.editIva = true">
