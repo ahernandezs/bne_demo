@@ -293,7 +293,7 @@
 											</label>
 											<span class="paddingL3">(L&iacute;nea Banamex)</span>
 											<br>
-											<label class="paddingL10"><input type="checkbox" ng-model="payingAccount.references" ng-checked="payingAccount.references"/> Referencias</label>
+											<label class="paddingL10"><input type="checkbox" ng-model="payingAccount.references" ng-checked="payingAccount.editNumeric || payingAccount.editAlpha"/> Referencias</label>
 											<form class="form-inline paddingL3">
 												<label class="paddingL10">
 													<span>Referencia num&eacute;rica</span><br>
@@ -431,7 +431,7 @@
 
 										</div>
 										<div class="content pull-left textL paddingL143">
-											<label class="paddingL10"><input type="checkbox" ng-model="payingAccount.references" ng-checked="payingAccount.references"/> Referencias</label>
+											<label class="paddingL10"><input type="checkbox" ng-model="payingAccount.references" ng-checked="payingAccount.editNumeric"/> Referencias</label>
 											<form class="form-inline paddingL3">
 												<label class="paddingL10">
 													<span>N&uacute;mero de referencia</span><br>
