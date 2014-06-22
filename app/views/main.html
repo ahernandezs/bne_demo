@@ -69,13 +69,21 @@
 							Seleccione una cuenta de retiro, capture la información de su(s) Pago(s) y dé clic en "Continuar". Si requiere adicionar más pagos de clic en el botón "Agregar más pagos".
 						</p>
 						<table class="table">
+							<thead>
+								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+									<th>&nbsp;</th>
+									<th><div class="head textL paddingL10">Cuentas</div></th>
+									<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+									<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
+									<th>&nbsp;</th>
+								</tr>
+							</thead>
 							<tbody ng-repeat="payingAccount in ownpayingAccounts">
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td class="width25">
 										<div class="head textC">{{$index + 1}}</div>
 									</td>
 									<td>
-										<div class="head textL paddingL10">Cuentas</div>
 										<div class="content paddingL10">
 											<div class="pull-left paddingR10">
 												<span class="span325">
@@ -104,7 +112,6 @@
 										</div>
 									</td>
 									<td class="width200">
-										<div class="head"><span class="span175">Importe MXN</span></div>
 										<div class="content">
 											<form class="form-inline span175" ng-show="payingAccount.target.account_type_i !== 3">
 												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" maxlength="16" numbers-only="numbers-only" currency="">
@@ -189,13 +196,21 @@
 							Seleccione una cuenta de retiro, capture la información de su(s) Pago(s) y dé clic en "Continuar". Si requiere adicionar más pagos de clic en el botón "Agregar más pagos".
 						</p>
 						<table class="table">
+							<thead>
+								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+									<th>&nbsp;</th>
+									<th><div class="head textL paddingL10">Cuentas</div></th>
+									<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+									<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
+									<th>&nbsp;</th>
+								</tr>
+							</thead>
 							<tbody ng-repeat="payingAccount in thirdpayingAccounts">
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td class="width25" rowspan="2">
 										<div class="head textC">{{$index + 1}}</div>
 									</td>
 									<td>
-										<div class="head textL paddingL10">Cuentas</div>
 										<div class="content paddingL10">
 											<div class="pull-left paddingR10">
 												<span class="span325">
@@ -229,7 +244,6 @@
 										</div>
 									</td>
 									<td class="width200">
-										<div class="head"><span class="span175">Importe MXN</span></div>
 										<div class="content">
 											<form class="form-inline span175">
 												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
@@ -334,13 +348,21 @@
 							Seleccione una cuenta de retiro, capture la informaci&oacute;n de su(s) Pago(s) y d&eacute; clic en continuar. Si requiere adicionar m&aacute;s pagos de click en el bot&oacute;n “Agregar más pagos”.
 						</p>
 						<table class="table">
+							<thead>
+								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+									<th>&nbsp;</th>
+									<th><div class="head textL paddingL10">Cuentas</div></th>
+									<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+									<th><div class="head"><span class="span175">Fecha de operaci&oacute;n</span></th>
+									<th>&nbsp;</th>
+								</tr>
+							</thead>
 							<tbody ng-repeat="payingAccount in interbankPayments">
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td class="width25" rowspan="2">
 										<div class="head textC">{{$index + 1}}</div>
 									</td>
 									<td>
-										<div class="head textL paddingL10">Cuentas</div>
 										<div class="content paddingL10">
 											<div class="pull-left paddingR10">
 												<span class="span325">
@@ -373,7 +395,6 @@
 										</div>
 									</td>
 									<td class="width200">
-										<div class="head"><span class="span175">Importe MXN</span></div>
 										<div class="content">
 											<form class="form-inline span175">
 												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
@@ -381,9 +402,6 @@
 										</div>
 									</td>
 									<td class="width230">
-										<div class="head">
-											<span class="span175">Fecha de operaci&oacute;n</span>
-										</div>
 										<div class="content">
 											<form class="form-inline span175">
 												<span class="paddingR3">Fecha</span> <input class="form-control calendario " type="text" value="" jqdatepicker ng-model="payingAccount.date" ng-change="payingAccount.programming = true" maxlength="10">
@@ -469,13 +487,21 @@
 							Seleccione una cuenta de retiro, capture la información de su(s) Pago(s) y dé clic en "Continuar". Si requiere adicionar más pagos de clic en el botón "Agregar más pagos".
 						</p>
 						<table class="table">
+							<thead>
+								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+									<th>&nbsp;</th>
+									<th><div class="head textL paddingL10">Cuentas</div></th>
+									<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+									<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
+									<th>&nbsp;</th>
+								</tr>
+							</thead>
 							<tbody ng-repeat="payingAccount in orderpayingAccounts">
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td class="width25">
 										<div class="head textC">{{$index + 1}}</div>
 									</td>
 									<td>
-										<div class="head textL paddingL10">Cuentas</div>
 										<div class="content paddingL10">
 											<div class="pull-left paddingR10">
 												<span class="span325">
@@ -518,7 +544,6 @@
 										</div>
 									</td>
 									<td class="width200">
-										<div class="head"><span class="span175">Importe MXN</span></div>
 										<div class="content">
 											<form class="form-inline span175">
 												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
@@ -649,13 +674,21 @@
               <p class="title">Pagar a un Grupo de Beneficiarios</p>
               <p class="intrucciones"><strong>Nombre del grupo: </strong>{{selectedGroup.name}}</p>
               <table class="table">
+				<thead>
+					<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+						<th>&nbsp;</th>
+						<th><div class="head textL paddingL10">Cuentas</div></th>
+						<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+						<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
+						<th>&nbsp;</th>
+					</tr>
+				</thead>
                 <tbody ng-repeat="payingAccount in groupItems.docs">
                 <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
                   <td rowspan="2">
                     <div class="head textC">{{$index + 1}}</div>
                   </td>
                   <td>
-                    <div class="head textL paddingL10">Cuentas</div>
                     <div class="content">
                       <div class="pull-left">
                         <span class="span325">
@@ -683,7 +716,6 @@
                     </div>
                   </td>
                   <td>
-                    <div class="head"><span class="span140">Importe MXN</span></div>
                     <div class="content">
                       <form class="form-inline span140">
                         <span class="paddingR3">$</span> <input ng-class="{'gray-input' : !payingAccount.editAmount}" class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount_d" ng-change="fiscalVerify(payingAccount); payingAccount.editAmount = true" maxlength="16" numbers-only="numbers-only" currency="">
@@ -691,9 +723,6 @@
                     </div>
                   </td>
                   <td>
-                    <div class="head">
-                      <span class="span175">Fecha de operaci&oacute;n</span>
-                    </div>
                     <div class="content">
                       <form class="form-inline span175">
                         <span class="paddingR3">Fecha</span> <input ng-class="{'gray-input' : !payingAccount.editDate}" class="form-control calendario " type="text" value="" jqdatepicker ng-model="payingAccount.application_date_dt_s" ng-change="payingAccount.programming = true; payingAccount.editDate = true" maxlength="10">
@@ -804,13 +833,21 @@
 		  <p class="title">Cuentas Propias</p>
 		  <p class="intrucciones">Para las siguientes operaciones no es necesario ingresar clave din&aacute;mica, al hacer clic en el bot&oacute;n "Aceptar", dichas operaciones se aplicarán.</p>
 		  <table class="table">
+			<thead>
+				<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+					<th>&nbsp;</th>
+					<th><div class="head textL paddingL10">Cuentas</div></th>
+					<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+					<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
 			<tbody ng-repeat="payingAccount in ownpayingAccounts">
 			  <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 				<td>
 				  <div class="head textC">{{$index + 1}}</div>
 				</td>
 				<td>
-				  <div class="head textL paddingL10">Cuentas</div>
 				  <div class="content paddingL10">
 					<div class="pull-left paddingR10">
 					  <span class="span325">
@@ -839,7 +876,6 @@
 				  </div>
 				</td>
 				<td class="width20p">
-				  <div class="head"><span class="span175">Importe MXN</span></div>
 				  <div class="content">
 					<form class="form-inline span175" ng-show="payingAccount.target.account_type_i !== 3">
 					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" maxlength="16" numbers-only="numbers-only" currency="">
@@ -916,13 +952,21 @@
 		  <p class="title">Cuentas Terceros Banamex</p>
 		  <p class="intrucciones">Para las siguientes operaciones es necesario ingresar clave din&aacute;mica, al hacer clic en el bot&oacute;n "Aceptar", se le solicitar&aacute; ingresar dicha clave.</p>
 		  <table class="table">
+			<thead>
+				<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+					<th>&nbsp;</th>
+					<th><div class="head textL paddingL10">Cuentas</div></th>
+					<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+					<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
 			<tbody ng-repeat="payingAccount in thirdpayingAccounts">
 			  <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 				<td rowspan="2">
 				  <div class="head textC">{{$index + 1}}</div>
 				</td>
 				<td>
-				  <div class="head textL paddingL10">Cuentas</div>
 				  <div class="content paddingL10">
 					<div class="pull-left paddingR10">
 					  <span class="span325">
@@ -951,7 +995,6 @@
 				  </div>
 				</td>
 				<td class="width20p">
-				  <div class="head"><span class="span175">Importe MXN</span></div>
 				  <div class="content">
 					<form class="form-inline span175">
 					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
@@ -1048,13 +1091,21 @@
 		  <p class="title">Cuentas Interbancarias</p>
 		  <p class="intrucciones">Para las siguientes operaciones es necesario ingresar clave din&aacute;mica, al hacer clic en el bot&oacute;n "Aceptar", se le solicitar&aacute; ingresar dicha clave.</p>
 		  <table class="table">
+			<thead>
+				<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+					<th>&nbsp;</th>
+					<th><div class="head textL paddingL10">Cuentas</div></th>
+					<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+					<th><div class="head"><label class="span175">Fecha de operaci&oacute;n</label></div></th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
 			<tbody ng-repeat="payingAccount in interbankPayments">
 			  <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 				<td rowspan="2">
 				  <div class="head textC">{{$index + 1}}</div>
 				</td>
 				<td>
-				  <div class="head textL paddingL10">Cuentas</div>
 				  <div class="content paddingL10">
 					<div class="pull-left paddingR10">
 					  <span class="span325">
@@ -1083,7 +1134,6 @@
 				  </div>
 				</td>
 				<td class="width20p">
-				  <div class="head"><span class="span175">Importe MXN</span></div>
 				  <div class="content">
 					<form class="form-inline span175">
 					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
@@ -1091,9 +1141,6 @@
 				  </div>
 				</td>
 				<td class="width20p">
-				  <div class="head">
-					<span class="span175">Fecha de operaci&oacute;n</span>
-				  </div>
 				  <div class="content">
 					<form class="form-inline span175">
 					  <span class="paddingR3">Fecha</span> <input class="form-control calendario " type="text" value="" jqdatepicker ng-model="payingAccount.date" ng-change="payingAccount.programming = true" maxlength="10">
@@ -1168,13 +1215,21 @@
 		  <p class="title">Órdenes de Pago</p>
 		  <p class="intrucciones">Para las siguientes operaciones es necesario ingresar clave din&aacute;mica, al hacer clic en el bot&oacute;n "Aceptar", se le solicitar&aacute; ingresar dicha clave.</p>
 		  <table class="table">
+			<thead>
+				<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+					<th>&nbsp;</th>
+					<th><div class="head textL paddingL10">Cuentas</div></th>
+					<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+					<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
 			<tbody ng-repeat="payingAccount in orderpayingAccounts">
 			  <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 				<td>
 				  <div class="head textC">{{$index + 1}}</div>
 				</td>
 				<td>
-				  <div class="head textL paddingL10">Cuentas</div>
 				  <div class="content paddingL10">
 					<div class="pull-left paddingR10">
 					  <span class="span325">
@@ -1212,7 +1267,6 @@
 				  </div>
 				</td>
 				<td class="width20p">
-				  <div class="head"><span class="span175">Importe MXN</span></div>
 				  <div class="content">
 					<form class="form-inline span175">
 					  <span class="paddingR3">$</span> <input class="form-control width120" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
@@ -1268,13 +1322,21 @@
 				<p class="title">Pagar a un Grupo de Beneficiarios</p>
 				<p class="intrucciones"><strong>Nombre del grupo: </strong>{{selectedGroup.name}}</p>
 				<table class="table">
+					<thead>
+						<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
+							<th>&nbsp;</th>
+							<th><div class="head textL paddingL10">Cuentas</div></th>
+							<th><div class="head"><span class="span175">Importe MXN</span></div></th>
+							<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
+							<th>&nbsp;</th>
+						</tr>
+					</thead>
 					<tbody ng-repeat="payingAccount in groupItems.docs">
 						<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 							<td rowspan="2">
 								<div class="head textC">{{$index + 1}}</div>
 							</td>
 							<td>
-								<div class="head textL paddingL10">Cuentas</div>
 								<div class="content">
 									<div class="pull-left">
 										<span class="span325">
@@ -1302,7 +1364,6 @@
 								</div>
 							</td>
 							<td>
-								<div class="head"><span class="span140">Importe MXN</span></div>
 								<div class="content">
 									<form class="form-inline span140">
 										<span class="paddingR3">$</span> <input ng-class="{'gray-input' : !payingAccount.editAmount}" class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount_d" ng-change="fiscalVerify(payingAccount); payingAccount.editAmount = true" maxlength="16" numbers-only="numbers-only" currency="">
@@ -1310,9 +1371,6 @@
 								</div>
 							</td>
 							<td>
-								<div class="head">
-									<span class="span175">Fecha de operaci&oacute;n</span>
-								</div>
 								<div class="content">
 									<form class="form-inline span175">
 										<span class="paddingR3">Fecha</span> <input ng-class="{'gray-input' : !payingAccount.editDate}" class="form-control calendario " type="text" value="" jqdatepicker ng-model="payingAccount.application_date_dt_s" ng-change="payingAccount.programming = true; payingAccount.editDate = true" maxlength="10">
