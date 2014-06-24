@@ -114,7 +114,7 @@
 									<td class="width200">
 										<div class="content">
 											<form class="form-inline span175" ng-show="payingAccount.target.account_type_i !== 3">
-												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" maxlength="16" numbers-only="numbers-only" currency="">
+												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" maxlength="10" numbers-only="numbers-only" currency="">
 											</form>
 											<form class="form-inline" ng-show="payingAccount.target.account_type_i === 3">
 												<label class="fontNormal paddingT10 clear-fix span175 paddingL3">
@@ -133,7 +133,7 @@
 													<input class="v-alignT" type="radio" name="radio1">
 													<span class="displayIB paddingL3">
 														Otro importe
-														<br><input class="form-control textR" type="text" value="" ng-model="payingAccount.amount" maxlength="16" numbers-only="numbers-only" currency="">
+														<br><input class="form-control textR" type="text" value="" ng-model="payingAccount.amount" maxlength="10" numbers-only="numbers-only" currency="">
 													</span>
 												</label>
 											</form>
@@ -246,7 +246,7 @@
 									<td class="width200">
 										<div class="content">
 											<form class="form-inline span175">
-												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
+												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="10" numbers-only="numbers-only" currency="">
 											</form>
 										</div>
 									</td>
@@ -397,7 +397,7 @@
 									<td class="width200">
 										<div class="content">
 											<form class="form-inline span175">
-												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
+												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="10" numbers-only="numbers-only" currency="">
 											</form>
 										</div>
 									</td>
@@ -546,7 +546,7 @@
 									<td class="width200">
 										<div class="content">
 											<form class="form-inline span175">
-												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
+												<span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="10" numbers-only="numbers-only" currency="">
 											</form>
 										</div>
 									</td>
@@ -672,7 +672,7 @@
 
             <div class="paso-2" ng-show="preConfirmationGroup">
               <p class="title">Pagar a un Grupo de Beneficiarios</p>
-              <p class="intrucciones"><strong>Nombre del grupo:&nbsp;</strong>{{selectedGroup.name}}</p>
+              <p class="intrucciones"><strong>Nombre del grupo:&nbsp;&nbsp;</strong>{{selectedGroup.name}}</p>
               <table class="table">
 				<thead>
 					<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
@@ -718,7 +718,7 @@
                   <td>
                     <div class="content">
                       <form class="form-inline span140">
-                        <span class="paddingR3">$</span> <input ng-class="{'gray-input' : !payingAccount.editAmount}" class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount_d" ng-change="fiscalVerify(payingAccount); payingAccount.editAmount = true" maxlength="16" numbers-only="numbers-only" currency="">
+                        <span class="paddingR3">$</span> <input ng-class="{'gray-input' : !payingAccount.editAmount}" class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount_d" ng-change="fiscalVerify(payingAccount); payingAccount.editAmount = true" maxlength="10" numbers-only="numbers-only" currency="">
                       </form>
                     </div>
                   </td>
@@ -761,10 +761,10 @@
                       <label class="span175">
                         <input ng-change="fiscalVerify(payingAccount)" type="checkbox"  ng-model="payingAccount.fiscal_b"> Comprobante Fiscal<br>
                         <form class="form-inline">
-                          <strong>RFC</strong> <input ng-class="{'gray-input' : !payingAccount.editRfc}" class="form-control width100" type="text" value="" ng-model="payingAccount.rfc_s" maxlength="13" ng-change="payingAccount.fiscal_b = true; payingAccount.editRfc = true;this.focus()" ng-click="this.focus()">
+                          <strong class="width30 inline">RFC</strong> <input ng-class="{'gray-input' : !payingAccount.editRfc}" class="form-control width100" type="text" value="" ng-model="payingAccount.rfc_s" maxlength="13" ng-change="payingAccount.fiscal_b = true; payingAccount.editRfc = true;this.focus()" ng-click="this.focus()">
                         </form>
                         <form class="form-inline">
-                          <strong>IVA&nbsp;&nbsp;</strong> <input ng-class="{'gray-input' : !payingAccount.editIva}" class="form-control width80" maxlength="10" type="text" value="" ng-model="payingAccount.iva_d" ng-change="payingAccount.fiscal_b = true; payingAccount.editIva = true" numbers-only="numbers-only">
+                          <strong class="width30 inline">IVA&nbsp;&nbsp;</strong> <input ng-class="{'gray-input' : !payingAccount.editIva}" class="form-control width80" maxlength="10" type="text" value="" ng-model="payingAccount.iva_d" ng-change="payingAccount.fiscal_b = true; payingAccount.editIva = true" numbers-only="numbers-only">
                         </form>
                       </label>
                     </div>
@@ -878,7 +878,7 @@
 				<td class="width20p">
 				  <div class="content">
 					<form class="form-inline span175" ng-show="payingAccount.target.account_type_i !== 3">
-					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" maxlength="16" numbers-only="numbers-only" currency="">
+					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" maxlength="10" numbers-only="numbers-only" currency="">
 					</form>
 					<form class="form-inline" ng-show="payingAccount.target.account_type_i === 3">
 					  <label class="fontNormal paddingT10 clear-fix span175 paddingL3">
@@ -897,7 +897,7 @@
 						<input class="v-alignT" type="radio" name="radio1">
 						<span class="displayIB paddingL3">
 						  Otro importe
-						  <br><input class="form-control textR" type="text" value="" ng-model="payingAccount.amount" maxlength="16" numbers-only="numbers-only" currency="">
+						  <br><input class="form-control textR" type="text" value="" ng-model="payingAccount.amount" maxlength="10" numbers-only="numbers-only" currency="">
 						</span>
 					  </label>
 					</form>
@@ -997,7 +997,7 @@
 				<td class="width20p">
 				  <div class="content">
 					<form class="form-inline span175">
-					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
+					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="10" numbers-only="numbers-only" currency="">
 					</form>
 				  </div>
 				</td>
@@ -1136,7 +1136,7 @@
 				<td class="width20p">
 				  <div class="content">
 					<form class="form-inline span175">
-					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
+					  <span class="paddingR3">$</span> <input class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="10" numbers-only="numbers-only" currency="">
 					</form>
 				  </div>
 				</td>
@@ -1269,7 +1269,7 @@
 				<td class="width20p">
 				  <div class="content">
 					<form class="form-inline span175">
-					  <span class="paddingR3">$</span> <input class="form-control width120" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="16" numbers-only="numbers-only" currency="">
+					  <span class="paddingR3">$</span> <input class="form-control width120" type="text" value="" ng-model="payingAccount.amount" ng-change="fiscalVerify(payingAccount)" maxlength="10" numbers-only="numbers-only" currency="">
 					</form>
 				  </div>
 				</td>
@@ -1320,7 +1320,7 @@
 		<div class="content-box" ng-show="selectedGroup">
 			<div class="contenido-total">
 				<p class="title">Pagar a un Grupo de Beneficiarios</p>
-				<p class="intrucciones"><strong>Nombre del grupo: </strong>{{selectedGroup.name}}</p>
+				<p class="intrucciones"><strong>Nombre del grupo:&nbsp;&nbsp;</strong>{{selectedGroup.name}}</p>
 				<table class="table">
 					<thead>
 						<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
@@ -1366,7 +1366,7 @@
 							<td>
 								<div class="content">
 									<form class="form-inline span140">
-										<span class="paddingR3">$</span> <input ng-class="{'gray-input' : !payingAccount.editAmount}" class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount_d" ng-change="fiscalVerify(payingAccount); payingAccount.editAmount = true" maxlength="16" numbers-only="numbers-only" currency="">
+										<span class="paddingR3">$</span> <input ng-class="{'gray-input' : !payingAccount.editAmount}" class="form-control width120 textR" type="text" value="" ng-model="payingAccount.amount_d" ng-change="fiscalVerify(payingAccount); payingAccount.editAmount = true" maxlength="10" numbers-only="numbers-only" currency="">
 									</form>
 								</div>
 							</td>
@@ -1409,10 +1409,10 @@
 									<label class="span175">
 										<input ng-change="fiscalVerify(payingAccount)" type="checkbox"  ng-model="payingAccount.fiscal_b"> Comprobante Fiscal<br>
 										<form class="form-inline">
-											<strong>RFC</strong> <input ng-class="{'gray-input' : !payingAccount.editRfc}" class="form-control width100" type="text" value="" ng-model="payingAccount.rfc_s" maxlength="13" ng-change="payingAccount.fiscal_b = true; payingAccount.editRfc = true">
+											<strong class="width30 inline">RFC</strong> <input ng-class="{'gray-input' : !payingAccount.editRfc}" class="form-control width100" type="text" value="" ng-model="payingAccount.rfc_s" maxlength="13" ng-change="payingAccount.fiscal_b = true; payingAccount.editRfc = true">
 										</form>
 										<form class="form-inline">
-											<strong>IVA&nbsp;&nbsp;</strong> <input ng-class="{'gray-input' : !payingAccount.editIva}" class="form-control width80" maxlength="10" type="text" value="" ng-model="payingAccount.iva_d" ng-change="payingAccount.fiscal_b = true; payingAccount.editIva = true" numbers-only="numbers-only">
+											<strong class="width30 inline">IVA&nbsp;&nbsp;</strong> <input ng-class="{'gray-input' : !payingAccount.editIva}" class="form-control width80" maxlength="10" type="text" value="" ng-model="payingAccount.iva_d" ng-change="payingAccount.fiscal_b = true; payingAccount.editIva = true" numbers-only="numbers-only">
 										</form>
 									</label>
 								</div>
@@ -2035,7 +2035,7 @@
 
 		<div class="area-botones">
 			<div class="pull-left" ng-hide="selectedGroup">
-				<label class="fontNormal"><input type="checkbox" ng-model="addToNewGroup"> Agregar estos pagos a un grupo</label>
+				<label class="fontNormal"><input type="checkbox" ng-model="addToNewGroup"> Agregar estos pagos a un grupo &nbsp;&nbsp;</label>
 				<select ng-options="group.name for group in groups.docs" ng-show="addToNewGroup" ng-model="addToGroupSelection">
 					<option value="">Seleccione uno</option>
 				</select><br>
