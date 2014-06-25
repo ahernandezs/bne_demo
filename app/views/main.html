@@ -72,7 +72,7 @@
 							<thead>
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<th>&nbsp;</th>
-									<th><div class="head textL paddingL10">Cuentas</div></th>
+									<th><div class="head textL">Cuentas</div></th>
 									<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 									<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
 									<th>&nbsp;</th>
@@ -81,7 +81,7 @@
 							<tbody ng-repeat="payingAccount in ownpayingAccounts">
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td class="width25">
-										<div class="head textC">{{$index + 1}}</div>
+										<div class="content textC"><strong>{{$index + 1}}</strong></div>
 									</td>
 									<td>
 										<div class="content paddingL10">
@@ -140,7 +140,7 @@
 										</div>
 									</td>
 									<td class="width230">
-										<div class="head">
+										<div class="content">
 											<label class="span175"><input type="checkbox" ng-click="verifyThirdMode(payingAccount, 'programming')" value="" ng-model="payingAccount.programming"> Programar a fecha futura</label>
 										</div>
 										<div class="content">
@@ -199,7 +199,7 @@
 							<thead>
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<th>&nbsp;</th>
-									<th><div class="head textL paddingL10">Cuentas</div></th>
+									<th><div class="head textL">Cuentas</div></th>
 									<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 									<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
 									<th>&nbsp;</th>
@@ -208,7 +208,7 @@
 							<tbody ng-repeat="payingAccount in thirdpayingAccounts">
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td class="width25" rowspan="2">
-										<div class="head textC">{{$index + 1}}</div>
+										<div class="content textC"><strong>{{$index + 1}}</strong></div>
 									</td>
 									<td>
 										<div class="content paddingL10">
@@ -251,7 +251,7 @@
 										</div>
 									</td>
 									<td class="width230">
-										<div class="head">
+										<div class="content">
 											<label class="span175"><input type="checkbox" ng-click="verifyThirdMode(payingAccount, 'programming')" value="" ng-model="payingAccount.programming"> Programar a fecha futura</label>
 										</div>
 										<div class="content">
@@ -351,7 +351,7 @@
 							<thead>
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<th>&nbsp;</th>
-									<th><div class="head textL paddingL10">Cuentas</div></th>
+									<th><div class="head textL">Cuentas</div></th>
 									<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 									<th><div class="head"><span class="span175">Fecha de operaci&oacute;n</span></th>
 									<th>&nbsp;</th>
@@ -360,7 +360,7 @@
 							<tbody ng-repeat="payingAccount in interbankPayments">
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td class="width25" rowspan="2">
-										<div class="head textC">{{$index + 1}}</div>
+										<div class="content textC"><strong>{{$index + 1}}</strong></div>
 									</td>
 									<td>
 										<div class="content paddingL10">
@@ -490,7 +490,7 @@
 							<thead>
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<th>&nbsp;</th>
-									<th><div class="head textL paddingL10">Cuentas</div></th>
+									<th><div class="head textL">Cuentas</div></th>
 									<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 									<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
 									<th>&nbsp;</th>
@@ -499,7 +499,7 @@
 							<tbody ng-repeat="payingAccount in orderpayingAccounts">
 								<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 									<td class="width25">
-										<div class="head textC">{{$index + 1}}</div>
+										<div class="content textC"><strong>{{$index + 1}}</strong></div>
 									</td>
 									<td>
 										<div class="content paddingL10">
@@ -551,7 +551,7 @@
 										</div>
 									</td>
 									<td class="width230">
-										<div class="head">
+										<div class="content">
 											<label class="span175"><input type="checkbox" ng-click="verifyThirdMode(payingAccount, 'programming')" value="" ng-model="payingAccount.programming"> Programar a fecha futura</label>
 										</div>
 										<div class="content">
@@ -677,7 +677,7 @@
 				<thead>
 					<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 						<th>&nbsp;</th>
-						<th><div class="head textL paddingL10">Cuentas</div></th>
+						<th><div class="head textL">Cuentas</div></th>
 						<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 						<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
 						<th>&nbsp;</th>
@@ -686,7 +686,7 @@
                 <tbody ng-repeat="payingAccount in groupItems.docs">
                 <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
                   <td rowspan="2">
-                    <div class="head textC">{{$index + 1}}</div>
+                    <div class="content textC"><strong>{{$index + 1}}</strong></div>
                   </td>
                   <td>
                     <div class="content">
@@ -836,7 +836,7 @@
 			<thead>
 				<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 					<th>&nbsp;</th>
-					<th><div class="head textL paddingL10">Cuentas</div></th>
+					<th><div class="head textL">Cuentas</div></th>
 					<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 					<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
 					<th>&nbsp;</th>
@@ -845,7 +845,7 @@
 			<tbody ng-repeat="payingAccount in ownpayingAccounts">
 			  <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 				<td>
-				  <div class="head textC">{{$index + 1}}</div>
+				  <div class="content textC"><strong>{{$index + 1}}</strong></div>
 				</td>
 				<td>
 				  <div class="content paddingL10">
@@ -904,7 +904,7 @@
 				  </div>
 				</td>
 				<td class="width20p">
-				  <div class="head">
+				  <div class="content">
 					<label class="span175"><input type="checkbox" ng-click="verifyThirdMode(payingAccount, 'programming')" value="" ng-model="payingAccount.programming"> Programar a fecha futura</label>
 				  </div>
 				  <div class="content">
@@ -955,7 +955,7 @@
 			<thead>
 				<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 					<th>&nbsp;</th>
-					<th><div class="head textL paddingL10">Cuentas</div></th>
+					<th><div class="head textL">Cuentas</div></th>
 					<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 					<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
 					<th>&nbsp;</th>
@@ -964,7 +964,7 @@
 			<tbody ng-repeat="payingAccount in thirdpayingAccounts">
 			  <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 				<td rowspan="2">
-				  <div class="head textC">{{$index + 1}}</div>
+				  <div class="content textC"><strong>{{$index + 1}}</strong></div>
 				</td>
 				<td>
 				  <div class="content paddingL10">
@@ -1002,7 +1002,7 @@
 				  </div>
 				</td>
 				<td class="width20p">
-				  <div class="head">
+				  <div class="content">
 					<label class="span175"><input type="checkbox" ng-click="verifyThirdMode(payingAccount, 'programming')" value="" ng-model="payingAccount.programming"> Programar a fecha futura</label>
 				  </div>
 				  <div class="content">
@@ -1094,7 +1094,7 @@
 			<thead>
 				<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 					<th>&nbsp;</th>
-					<th><div class="head textL paddingL10">Cuentas</div></th>
+					<th><div class="head textL">Cuentas</div></th>
 					<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 					<th><div class="head"><label class="span175">Fecha de operaci&oacute;n</label></div></th>
 					<th>&nbsp;</th>
@@ -1103,7 +1103,7 @@
 			<tbody ng-repeat="payingAccount in interbankPayments">
 			  <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 				<td rowspan="2">
-				  <div class="head textC">{{$index + 1}}</div>
+				  <div class="content textC"><strong>{{$index + 1}}</strong></div>
 				</td>
 				<td>
 				  <div class="content paddingL10">
@@ -1218,7 +1218,7 @@
 			<thead>
 				<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 					<th>&nbsp;</th>
-					<th><div class="head textL paddingL10">Cuentas</div></th>
+					<th><div class="head textL">Cuentas</div></th>
 					<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 					<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
 					<th>&nbsp;</th>
@@ -1227,7 +1227,7 @@
 			<tbody ng-repeat="payingAccount in orderpayingAccounts">
 			  <tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 				<td>
-				  <div class="head textC">{{$index + 1}}</div>
+				  <div class="content textC"><strong>{{$index + 1}}</strong></div>
 				</td>
 				<td>
 				  <div class="content paddingL10">
@@ -1274,7 +1274,7 @@
 				  </div>
 				</td>
 				<td class="width20p">
-				  <div class="head">
+				  <div class="content">
 					<label class="span175"><input type="checkbox" ng-click="verifyThirdMode(payingAccount, 'programming')" value="" ng-model="payingAccount.programming"> Programar a fecha futura</label>
 				  </div>
 				  <div class="content">
@@ -1325,7 +1325,7 @@
 					<thead>
 						<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 							<th>&nbsp;</th>
-							<th><div class="head textL paddingL10">Cuentas</div></th>
+							<th><div class="head textL">Cuentas</div></th>
 							<th><div class="head"><span class="span175">Importe MXN</span></div></th>
 							<th><div class="head"><label class="span175">Fecha de pago</label></div></th>
 							<th>&nbsp;</th>
@@ -1334,7 +1334,7 @@
 					<tbody ng-repeat="payingAccount in groupItems.docs">
 						<tr ng-class-odd="'bgf0f4f9'" ng-class-even="">
 							<td rowspan="2">
-								<div class="head textC">{{$index + 1}}</div>
+								<div class="content textC"><strong>{{$index + 1}}</strong></div>
 							</td>
 							<td>
 								<div class="content">
@@ -2035,7 +2035,7 @@
 
 		<div class="area-botones">
 			<div class="pull-left" ng-hide="selectedGroup">
-				<label class="fontNormal"><input type="checkbox" ng-model="addToNewGroup"> Agregar estos pagos a un grupo &nbsp;&nbsp;</label>
+				<label class="fontNormal paddingTB10"><input type="checkbox" ng-model="addToNewGroup"> Agregar estos pagos a un grupo &nbsp;&nbsp;</label>
 				<select ng-options="group.name for group in groups.docs" ng-show="addToNewGroup" ng-model="addToGroupSelection">
 					<option value="">Seleccione uno</option>
 				</select><br>

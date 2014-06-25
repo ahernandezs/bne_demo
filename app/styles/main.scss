@@ -389,6 +389,10 @@ input.num{
 	padding-top: 6px!important;
 	padding-bottom: 6px!important;
 }
+.paddingTB10{
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
 /* PADDINGS PORCENTAJES */
 .paddingR40p{
 	padding-right:40%;
@@ -1014,6 +1018,18 @@ p.instrucciones{
 						td.border{
 							border-right: 1px solid #d0d0d0!important;
 						}
+						th{
+							border-bottom: 1px solid #FFFFFF!important;
+							border-right: 1px solid #d0d0d0!important;
+							.head,
+							span,
+							label{
+								font-size: 11px!important;
+							}
+						}
+						th:last-child{
+							border-right: none!important;
+						}
 					}
 					strong{
 						font-size: 11px;
@@ -1205,6 +1221,23 @@ p.instrucciones{
 				color: #333333;
 			}
 		}
+		thead{
+			th{
+				border-bottom: 1px solid #FFFFFF!important;
+				border-right: 1px solid #d0d0d0!important;
+				font-size: 11px!important;
+				color: #333333!important;
+				.head,
+				span,
+				label{
+					font-size: 11px!important;
+					color: #333333!important;
+				}
+			}
+			th:last-child{
+				border-right: none!important;
+			}
+		}
 		// thead{
 		// 	td{
 		// 		border:none!important;
@@ -1294,6 +1327,7 @@ p.instrucciones{
 			width: auto;
 			margin-right: 20px;
 			margin-bottom: 3px;
+			margin-left: 5px;
 			border-bottom: 1px dotted #b7b7b7!important;;
 		}
 		table{
